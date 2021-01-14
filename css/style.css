@@ -20,11 +20,7 @@ body {
   background-color: #000000;
 }
 
-.a-link {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-}
+
 
 section {
   padding: 5rem 0rem;
@@ -312,7 +308,7 @@ header {
 }
 
 .icons-header__svg {
-  width: 50%;
+  width: 100%;
   padding: 1rem 1.2rem;
   -webkit-transition: .4s;
   transition: .4s;
