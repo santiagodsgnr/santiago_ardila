@@ -20,6 +20,12 @@ body {
   background-color: #000000;
 }
 
+.a-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
 section {
   padding: 5rem 0rem;
 }
