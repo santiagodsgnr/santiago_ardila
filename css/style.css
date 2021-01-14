@@ -20,8 +20,6 @@ body {
   background-color: #000000;
 }
 
-
-
 section {
   padding: 5rem 0rem;
 }
@@ -308,11 +306,10 @@ header {
 }
 
 .icons-header__svg {
-  width: 100%;
+  width: 50%;
   padding: 1rem 1.2rem;
   -webkit-transition: .4s;
   transition: .4s;
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -502,6 +499,54 @@ header {
   }
 }
 
+.menu-portafolio-grid:nth-child(1):hover {
+  background-color: #2655AF;
+}
+
+.menu-portafolio-grid:nth-child(2):hover {
+  background-color: #233460;
+}
+
+.menu-portafolio-grid:nth-child(3):hover {
+  background-color: #009EE0;
+}
+
+.menu-portafolio-grid:nth-child(4):hover {
+  background-color: #ED5336;
+}
+
+.menu-portafolio-grid:nth-child(5):hover {
+  background-color: #F6AA12;
+}
+
+.menu-portafolio-grid:nth-child(6):hover {
+  background-color: #4AAA13;
+}
+
+.menu-portafolio-grid:nth-child(7):hover {
+  background-color: #2655AF;
+}
+
+.menu-portafolio-grid:nth-child(8):hover {
+  background-color: #161616;
+}
+
+.menu-portafolio-grid:nth-child(9):hover {
+  background-color: #EF5706;
+}
+
+.menu-portafolio-grid:nth-child(10):hover {
+  background-color: #00FF45;
+}
+
+.menu-portafolio-grid:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  cursor: pointer;
+}
+
 .menu-portafolio-grid__column {
   width: 100%;
   height: 350px;
@@ -517,54 +562,6 @@ header {
   .menu-portafolio-grid__column {
     height: 550px;
   }
-}
-
-.menu-portafolio-grid__column:nth-child(1):hover {
-  background-color: #2655AF;
-}
-
-.menu-portafolio-grid__column:nth-child(2):hover {
-  background-color: #233460;
-}
-
-.menu-portafolio-grid__column:nth-child(3):hover {
-  background-color: #009EE0;
-}
-
-.menu-portafolio-grid__column:nth-child(4):hover {
-  background-color: #ED5336;
-}
-
-.menu-portafolio-grid__column:nth-child(5):hover {
-  background-color: #F6AA12;
-}
-
-.menu-portafolio-grid__column:nth-child(6):hover {
-  background-color: #4AAA13;
-}
-
-.menu-portafolio-grid__column:nth-child(7):hover {
-  background-color: #2655AF;
-}
-
-.menu-portafolio-grid__column:nth-child(8):hover {
-  background-color: #161616;
-}
-
-.menu-portafolio-grid__column:nth-child(9):hover {
-  background-color: #EF5706;
-}
-
-.menu-portafolio-grid__column:nth-child(10):hover {
-  background-color: #00FF45;
-}
-
-.menu-portafolio-grid__column:hover {
-  -webkit-transition: .4s;
-  transition: .4s;
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-  cursor: pointer;
 }
 
 .menu-portafolio-grid__image {
@@ -757,7 +754,7 @@ footer h1 span {
 }
 
 .footer-social-icons__svg {
-  width: 60%;
+  width: 10%;
   margin: 1rem;
   -webkit-transition: .4s;
   transition: .4s;
@@ -767,7 +764,7 @@ footer h1 span {
 
 @media only screen and (min-width: 1024px) {
   .footer-social-icons__svg {
-    width: 2%;
+    width: 50%;
   }
   .footer-social-icons__svg:hover {
     -webkit-transform: scale(0.8);

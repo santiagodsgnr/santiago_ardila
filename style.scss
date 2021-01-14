@@ -551,7 +551,7 @@ footer {
         filter: opacity(.5);
 
         @include mq-desktop {
-            width: 2%;
+            width: 50%;
 
             &:hover {
                 transform: scale(0.80);
