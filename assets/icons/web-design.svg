@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135" height="135" viewBox="0 0 135 135">
+  <g id="Grupo_4" data-name="Grupo 4" transform="translate(0 0.197)">
+    <path id="laptop" d="M81.266,58.382H97.444v8.183H0V58.382H16.178A7.678,7.678,0,0,1,10.565,56a7.906,7.906,0,0,1-2.382-5.8V9.66a7.9,7.9,0,0,1,2.379-5.806,7.671,7.671,0,0,1,5.617-2.377h65.09a7.678,7.678,0,0,1,5.614,2.379,7.9,7.9,0,0,1,2.379,5.8V50.2a7.9,7.9,0,0,1-2.379,5.806A7.671,7.671,0,0,1,81.266,58.382ZM16.178,9.66V50.2h65.09V9.66Z" transform="translate(19.305 33.456)" fill="#fff"/>
+    <g id="Rectángulo_6" data-name="Rectángulo 6" transform="translate(0 -0.197)" fill="none" stroke="#0288d1" stroke-width="4">
+      <rect width="135" height="135" rx="21" stroke="none"/>
+      <rect x="2" y="2" width="131" height="131" rx="19" fill="none"/>
+    </g>
+  </g>
+</svg>

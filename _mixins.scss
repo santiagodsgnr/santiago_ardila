@@ -1,0 +1,75 @@
+//MIXINS
+
+@mixin mq-desktop() {
+    @media only screen and (min-width: 1024px) {
+        @content
+    }
+}
+
+@mixin reset() {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    font-smoothing: antialiased;
+}
+
+@mixin html() {
+    font-size: $pixels;
+    font-family: 'Comfortaa';
+    color: white;
+    scroll-behavior: smooth;
+}
+
+@mixin container() {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    @media only screen and (max-width: 320px) {
+        width: 80%;
+    }
+    @include mq-desktop {
+        width: 80%;
+    }
+}
+
+@mixin button() {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: $primaryColor;
+    color: white;
+    padding: 1.2rem 3rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Work Sans';
+    font-weight: bold;
+}
+
+@mixin grid($columns, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-gap: $gap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin flexCenter() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+

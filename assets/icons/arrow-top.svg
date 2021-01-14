@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="arrow-down-circle-fill" transform="translate(80 80) rotate(180)">
+    <path id="Trazado_5" data-name="Trazado 5" d="M80,40A40,40,0,1,1,40,0,40,40,0,0,1,80,40ZM42.5,25a2.5,2.5,0,1,0-5,0V48.964L26.769,38.229a2.5,2.5,0,0,0-3.54,3.54l15,15a2.5,2.5,0,0,0,3.54,0l15-15a2.5,2.5,0,1,0-3.54-3.54L42.5,48.964Z" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
