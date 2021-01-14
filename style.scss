@@ -76,6 +76,11 @@ header {
     z-index: 999;
     cursor: pointer;
 
+    @include mq-desktop {
+        top: 3rem;
+        right: 4rem;
+    }
+
     &__bars::after,
     &__bars,
     &__bars::before {
@@ -136,9 +141,34 @@ header {
         transition: all 650ms;
         text-decoration: none;
         text-align: left;
-        color: white;
+        color: gray;
         font-weight: 300;
+        transition: .4s;
+
+        &:hover {
+            color: white;
+            transition: .4s;
+            transform: scale(0.98);
+        }
     }
+}
+
+
+.active .menu__bars {
+    background-color: transparent;
+}
+
+.active .menu__bars::before {
+    transform: rotate(45deg);
+}
+
+.active .menu__bars::after {
+    transform: rotate(-45deg);
+}
+
+.active .menu__bars::before,
+.active .menu__bars::after {
+    top: 0;
 }
 
 .logo {

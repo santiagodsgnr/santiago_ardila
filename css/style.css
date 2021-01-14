@@ -117,6 +117,13 @@ header {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 1024px) {
+  .menu {
+    top: 3rem;
+    right: 4rem;
+  }
+}
+
 .menu__bars::after, .menu__bars, .menu__bars::before {
   content: "";
   position: absolute;
@@ -185,8 +192,37 @@ header {
   transition: all 650ms;
   text-decoration: none;
   text-align: left;
-  color: white;
+  color: gray;
   font-weight: 300;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.nav__a:hover {
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.active .menu__bars {
+  background-color: transparent;
+}
+
+.active .menu__bars::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.active .menu__bars::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.active .menu__bars::before,
+.active .menu__bars::after {
+  top: 0;
 }
 
 .logo {
