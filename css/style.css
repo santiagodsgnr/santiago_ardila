@@ -108,7 +108,7 @@ header {
 
 .menu {
   padding: 3rem 3rem;
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 1.5rem;
   background-color: #0067A6;
@@ -342,7 +342,7 @@ header {
 }
 
 .icons-header__svg {
-  width: 50%;
+  width: 100%;
   padding: 1rem 1.2rem;
   -webkit-transition: .4s;
   transition: .4s;
@@ -790,7 +790,7 @@ footer h1 span {
 }
 
 .footer-social-icons__svg {
-  width: 10%;
+  width: 50%;
   margin: 1rem;
   -webkit-transition: .4s;
   transition: .4s;

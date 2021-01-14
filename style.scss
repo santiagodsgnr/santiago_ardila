@@ -68,7 +68,7 @@ header {
 
 .menu {
     padding: 3rem 3rem;
-    position: absolute;
+    position: fixed;
     top: 2rem;
     right: 1.5rem;
     background-color: $primaryColor;
@@ -246,7 +246,7 @@ header {
     }
 
     &__svg {
-        width: 50%;
+        width: 100%;
         padding: 1rem 1.2rem;
         transition: .4s;
 
@@ -575,7 +575,7 @@ footer {
     margin: 1rem 0rem;
 
     &__svg {
-        width: 10%;
+        width: 50%;
         margin: 1rem;
         transition: .4s;
         filter: opacity(.5);
