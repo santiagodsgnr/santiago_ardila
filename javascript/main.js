@@ -7,7 +7,7 @@ const app = new Vue ({
     },
     methods: {
         toggleMenu() {
-            this.menu = !this.men
+            this.menu = !this.menu
         }
     }
 })
