@@ -23,6 +23,17 @@ section {
     @include container;
 }
 
+.a-link {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+    
+    &:hover {
+        transform: scale(0.98);
+        transition: .4s;
+    }
+}
+
 .title {
     font-size: 2.5rem;
 
@@ -357,10 +368,63 @@ header {
 }
 
 .menu-portafolio-grid {
+
     @include grid(1fr, 5rem);
 
     @include mq-desktop {
         @include grid(1fr 1fr, 6rem);
+        
+    }
+
+    &__column.one {
+        &:hover {
+            background-color: #2655AF;
+        }
+    }
+    &__column.two {
+        &:hover {
+            background-color: #233460;
+        }
+    }
+    &__column.tree {
+        &:hover {
+            background-color: #009EE0;
+        }
+    }
+    &__column.four {
+        &:hover {
+            background-color: #ED5336;
+        }
+    }
+    &__column.five {
+        &:hover {
+            background-color: #F6AA12;
+        }
+    }
+    &__column.six {
+        &:hover {
+            background-color: #4AAA13;
+        }
+    }
+    &__column.seven {
+        &:hover {
+            background-color: #2655AF;
+        }
+    }
+    &__column.eight {
+        &:hover {
+            background-color: #161616;
+        }
+    }
+    &__column.nine {
+        &:hover {
+            background-color: #EF5706;
+        }
+    }
+    &__column.ten {
+        &:hover {
+            background-color: #00FF45;
+        }
     }
 
 

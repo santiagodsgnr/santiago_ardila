@@ -42,6 +42,20 @@ section {
   }
 }
 
+.a-link {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.a-link:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 .title {
   font-size: 2.5rem;
 }
@@ -533,6 +547,46 @@ header {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.menu-portafolio-grid__column.one:hover {
+  background-color: #2655AF;
+}
+
+.menu-portafolio-grid__column.two:hover {
+  background-color: #233460;
+}
+
+.menu-portafolio-grid__column.tree:hover {
+  background-color: #009EE0;
+}
+
+.menu-portafolio-grid__column.four:hover {
+  background-color: #ED5336;
+}
+
+.menu-portafolio-grid__column.five:hover {
+  background-color: #F6AA12;
+}
+
+.menu-portafolio-grid__column.six:hover {
+  background-color: #4AAA13;
+}
+
+.menu-portafolio-grid__column.seven:hover {
+  background-color: #2655AF;
+}
+
+.menu-portafolio-grid__column.eight:hover {
+  background-color: #161616;
+}
+
+.menu-portafolio-grid__column.nine:hover {
+  background-color: #EF5706;
+}
+
+.menu-portafolio-grid__column.ten:hover {
+  background-color: #00FF45;
 }
 
 .menu-portafolio-grid__column {
