@@ -747,12 +747,6 @@ form button {
   font-weight: 300;
 }
 
-@media only screen and (min-width: 1024px) {
-  #contacto {
-    background: url("/assets/images/background_hero.jpg") center no-repeat;
-    background-size: cover;
-  }
-}
 
 @media only screen and (min-width: 1024px) {
   .form-grid {
