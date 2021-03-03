@@ -22,13 +22,19 @@
     <meta itemprop="name" content="Santiago Ardila | Frontend Developer">
     <meta itemprop="description" content="UI/UX Designer, Frontend Developer">
     <meta itemprop="image" content="">
-    <!-- FACEBOOK -->
-    <meta property="og:url" content="https://santiagoardila.vercel.app">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://santiagoardila.vercel.app/">
     <meta property="og:title" content="Santiago Ardila | Frontend Developer">
     <meta property="og:description" content="UI/UX Designer, Frontend Developer">
-    <meta property="og:image" content="">
-    <link rel="canonical" href="https://santiagoardila.vercel.app">
+    <meta property="og:image" content="/assets/images/og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://santiagoardila.vercel.app/">
+    <meta property="twitter:title" content="Santiago Ardila | Frontend Developer">
+    <meta property="twitter:description" content="UI/UX Designer, Frontend Developer">
+    <meta property="twitter:image" content="/assets/images/og.jpg">
     <!-- ESTILOS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -56,18 +62,18 @@
                 </div>
             </div>
 
-                <nav class="nav" v-show="menu">
-                    <div class="nav__overlay">
-                        <ul class="nav__ul">
-                            <li class="nav__li"><a @click="toggleMenu()" href="#home" class="nav__a">Home</a></li>
-                            <li class="nav__li"><a @click="toggleMenu()" href="#acerca-de-mi" class="nav__a">Acerca de
-                                    mí</a></li>
-                            <li class="nav__li"><a @click="toggleMenu()" href="#mi-portafolio" class="nav__a">Portafolio</a>
-                            </li>
-                            <li class="nav__li"><a @click="toggleMenu()" href="#contacto" class="nav__a">Contacto</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            <nav class="nav" v-show="menu">
+                <div class="nav__overlay">
+                    <ul class="nav__ul">
+                        <li class="nav__li"><a @click="toggleMenu()" href="#home" class="nav__a">Home</a></li>
+                        <li class="nav__li"><a @click="toggleMenu()" href="#acerca-de-mi" class="nav__a">Acerca de
+                                mí</a></li>
+                        <li class="nav__li"><a @click="toggleMenu()" href="#mi-portafolio" class="nav__a">Portafolio</a>
+                        </li>
+                        <li class="nav__li"><a @click="toggleMenu()" href="#contacto" class="nav__a">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
 
             <div class="main-text">
                 <h1 class="main-text__h1">Santiago Ardila</h1>
@@ -362,7 +368,7 @@
 
                     <div class="form-grid__column">
 
-                        <form action="">
+                        <form id="contact-form">
                             <label for="name">Nombre<span>*</span></label>
                             <input type="text" name="name" id="name" required>
                             <label for="email">Email<span>*</span></label>
@@ -411,6 +417,25 @@
     <script src="https://unpkg.com/vue-router@2.7.0/dist/vue-router.js"></script>
     <script src="/javascript/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_eWlhpW6FCgbFI2PzT3HOr");
+        })();
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
     <script>
         AOS.init({
             // Global settings:
