@@ -48,6 +48,18 @@
 
         <header id="home">
 
+            <transition name="fade">
+            <div id="myModal" class="modal" v-if="modal">
+                <div class="modal-content">
+                    <div class="ex1">
+                        <img src="/assets/images/check2-circle.svg" class="icon-check">
+                        <h2>Muchas gracias!</h2>
+                        <p>Tu mensaje ha sido enviado</p>
+                    </div>
+                </div>
+            </div>
+            </transition>
+
             <!-- <div class="icon-arrow">
                 <img src="/assets/icons/arrow-top.svg" class="icon-arrow__svg">
             </div> -->
@@ -354,7 +366,7 @@
 
         </section>
 
-        <!-- <section id="contacto">
+        <section id="contacto">
 
             <div class="container">
 
@@ -368,13 +380,13 @@
 
                     <div class="form-grid__column">
 
-                        <form id="contact-form">
+                        <form id="contact-form"  @submit.prevent="sendEmail">
                             <label for="name">Nombre<span>*</span></label>
-                            <input type="text" name="name" id="name" required>
+                            <input type="text" name="name" id="name" v-model="name" required>
                             <label for="email">Email<span>*</span></label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" v-model="email" required>
                             <label for="message">Mensaje<span>*</span></label>
-                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                            <textarea name="message" id="message" v-model="message" cols="30" rows="10" required></textarea>
                             <button type="submit" class="form__button">Enviar Mensaje</button>
                         </form>
 
@@ -382,7 +394,7 @@
                 </div>
             </div>
 
-        </section> -->
+        </section>
 
         <footer>
 
@@ -417,24 +429,12 @@
     <script src="https://unpkg.com/vue-router@2.7.0/dist/vue-router.js"></script>
     <script src="/javascript/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
     <script type="text/javascript">
         (function () {
             emailjs.init("user_eWlhpW6FCgbFI2PzT3HOr");
         })();
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function () {
-                        console.log('SUCCESS!');
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
     </script>
     <script>
         AOS.init({
